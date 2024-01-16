@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <button style="position: fixed; z-index: 10; right: 30px; bottom: 30px; background: #008de5; border: none; padding: 10px; border-radius: 50%; cursor: pointer;" onclick="window.location.href='index.html'"><img style="width: 40px;" src="home.svg" alt=""></button>
+    <div class="wrapper">
+        <h1 class="section-header">MAP SELECTOR<span style="font-size: 15px; position: absolute; top: -10px; left: 50%; transform: translate(-50%); font-family: 'Courier New', Courier, monospace;"><br>Click in the map to remove it</span></h1>
+        <div class="main-content">
+            <div class="box" id="1" onclick="a()">
+                <img src="./maps/Loading_Screen_Ascent-min.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Ascent</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="2" onclick="b()">
+                <img src="./maps/Loading_Screen_Bind-min.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Bind</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="3" onclick="c()">
+                <img src="./maps/Loading_Screen_Breeze-min.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Breeze</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="5" onclick="e()">
+                <img src="./maps/Loading_Screen_Haven-min.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Haven</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="7" onclick="g()">
+                <img src="./maps/Loading_Screen_Lotus-min.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Lotus</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="9" onclick="i()">
+                <img src="./maps/Loading_Screen_Split-min.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Split</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="10" onclick="j()">
+                <img src="./maps/valorant-sunset-min.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Sunset</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        x = 0;
+        function a(){
+            let a = document.getElementById('1');
+            a.remove();
+            x++;
+        }
+        function b(){
+            let b = document.getElementById('2');
+            b.remove();
+            x++;
+        }
+        function c(){
+            let c = document.getElementById('3');
+            c.remove();
+            x++;
+        }
+        function d(){
+            let d= document.getElementById('4');
+            d.remove();
+            x++;
+        }
+        function e(){
+            let e = document.getElementById('5');
+            e.remove();
+            x++;
+        }
+        function f(){
+            let f = document.getElementById('6');
+            f.remove();
+            x++;
+        }
+        function g(){
+            let g = document.getElementById('7');
+            g.remove();
+            x++;
+        }
+        function h(){
+            let h = document.getElementById('8');
+            h.remove();
+            x++;
+        }
+        function i(){
+            let i = document.getElementById('9');
+            i.remove();
+            x++;
+        }
+        function j(){
+            let j = document.getElementById('10');
+            j.remove();
+            x++;
+        }
+    </script>
+</body>
+</html>

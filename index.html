@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/home.css">
+  <title>Toss</title>
+</head>
+<body>
+  <button style="position: fixed; z-index: 10; right: 30px; bottom: 30px; background: #008de5; border: none; padding: 10px; border-radius: 50%; cursor: pointer;" onclick="window.location.href='index.html'"><img style="width: 40px;" src="home.svg" alt=""></button>
+  <div class="container">
+    <div class="parent">
+      <form>
+        <h1 style="text-align: center;">TOSS<br> </h1>
+        <input placeholder="Enter name of Team 1" class="input" type="text" id="team1">
+        <input placeholder="Enter name of Team 2" class="input" type="text" id="team2">
+        <button class="next" type="button" onclick="next()">Next</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    function next(){
+      team1 = document.getElementById('team1').value;
+      team2 = document.getElementById('team2').value;
+      localStorage["team1"] = team1;
+      localStorage["team2"] = team2;
+      window.location.href = "wheel.html";
+    }
+  </script>
+</body>
+</html>

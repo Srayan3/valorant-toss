@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+body {
+    background: #191919;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 80%;
+    position: relative;
+    min-height: 100vh;
+}
+.parent {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+}
+form {
+    width: 60%;
+}
+.input {
+    background: transparent;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    border: 5px solid #FBD214;
+    height: 60px;
+    border-radius: 12px;
+    color: white;
+    padding-left: 10px;
+    font-size: large;
+    box-sizing: border-box;
+}
+#team2 {
+    margin-top: 10px;
+}
+.next {
+    background: transparent;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    border: 5px solid #FBD214;
+    height: 60px;
+    border-radius: 12px;
+    color: white;
+    padding-left: 10px;
+    font-size: large;
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.next:hover {
+    background: #FBD214;
+    color: black;
+    font-weight: bold;
+}
